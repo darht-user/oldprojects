@@ -1,0 +1,433 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/ProximaNovaRegular/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/ProximaNovaRegular/ProximaNova-Regular.woff") format("woff"), url("fonts/ProximaNovaRegular/ProximaNova-Regular.ttf") format("truetype"); 
+}
+  @font-face {
+    font-family: "ProximaNova";
+    font-style: normal;
+    font-weight: 100;
+    src: url("fonts/ProximaNovaLt/ProximaNovaT-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/ProximaNovaLt/ProximaNovaT-Thin.woff") format("woff"), url("fonts/ProximaNovaLt/ProximaNovaT-Thin.ttf") format("truetype"); 
+}
+  @font-face {
+    font-family: "ProximaNova";
+    font-style: normal;
+    font-weight: 600;
+    src: url("fonts/ProximaNovaBold/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/ProximaNovaBold/ProximaNova-Semibold.woff") format("woff"), url("fonts/ProximaNovaBold/ProximaNova-Semibold.ttf") format("truetype"); 
+}
+  
+body {
+    font-family: "ProximaNova";
+    font-size: 16px;
+    color: #333;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.caption {
+    color: #818796;
+    text-align: center;
+}
+/*--------------SECTION TITLE---------*/
+.title {
+    background: url('img/bg.png') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.title-content {
+    text-align: center;
+    background: rgba(83, 87, 96, 0.84);
+    padding: 6% 10%;
+}
+
+.title-content span {
+    color: #f87a02;
+    font-weight: 600;
+}
+
+.title h1 {
+    font-weight: normal;
+    font-size: 32px;
+    color: #f87a02;
+}
+
+.title h2 {
+    font-weight: normal;
+    margin: 15px 0;
+}
+
+.title h3 {
+    font-weight: normal;
+    line-height: 1.7em;
+}
+
+.title a {
+    display: inline-block;
+    text-decoration: none;
+    color: #f87a02;
+    border: 2px solid #f87a02;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 20px;
+    margin-top: 25px;
+    transition: .6s;
+}
+
+.title a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    
+}
+
+/*----------SECTION PRODUCT------------*/
+.product {
+    padding: 30px 0;
+    box-shadow: 0px 14px 2px -10px rgba(0,0,0, 0.2);
+}
+
+.product-content .descr-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 60px;
+}
+
+.descr-wrapper .product-descr {
+    display: inline-block;
+    width: 31%;
+    margin: 10px 10px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+
+}
+
+.product-descr .img {
+    background: url('img/1.png') no-repeat;
+    background-position-x: 50%;
+    width: 100%;
+    height: 330px;
+    margin: 0 auto;
+    transition: .5s;
+}
+
+.product-descr .img:hover {
+    background: url('img/1.1.png') no-repeat;
+    background-position-x: 50%;
+}
+
+.product-descr:nth-child(2) .img {
+    background: url('img/2.png') no-repeat;
+    background-position-x: 50%;
+    width: 100%;
+    height: 330px;
+    margin: 0 auto;
+    transition: .5s;
+}
+
+.product-descr:nth-child(2) .img:hover {
+    background: url('img/2.2.png') no-repeat;
+    background-position-x: 50%;
+}
+
+.product-descr:nth-child(3) .img {
+    background: url('img/3.png') no-repeat;
+    background-position-x: 50%;
+    width: 100%;
+    height: 330px;
+    margin: 0 auto;
+    transition: .5s;
+}
+
+.product-descr:nth-child(3) .img:hover {
+    background: url('img/3.3.png') no-repeat;
+    background-position-x: 50%;
+}
+
+.product-descr:nth-child(4) .img {
+    background: url('img/4.png') no-repeat;
+    background-position-x: 50%;
+    width: 100%;
+    height: 330px;
+    margin: 0 auto;
+    transition: .5s;
+}
+
+.product-descr:nth-child(4) .img:hover {
+    background: url('img/4.4.png') no-repeat;
+    background-position-x: 50%;
+}
+
+.product-descr:nth-child(5) .img {
+    background: url('img/5.png') no-repeat;
+    background-position-x: 50%;
+    width: 100%;
+    height: 330px;
+    margin: 0 auto;
+    transition: .5s;
+}
+
+.product-descr:nth-child(5) .img:hover {
+    background: url('img/5.5.png') no-repeat;
+    background-position-x: 50%;
+}
+
+.product-descr .caption {
+    margin: 10px;
+    transition: .5s;
+}
+
+.product-descr .caption:hover {
+    transition: .5s;
+    color: #f87a02;
+}
+
+/*--------SECTION ARGUMENTS-------*/
+.arguments {
+    padding: 30px 0;
+    box-shadow: 0px 14px 2px -10px rgba(0,0,0, 0.2);
+}
+
+
+.arg-descr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+
+.arg-descr .arg {
+    width: 45%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.arg-descr .arg:hover .number {
+    color: #868C9A;
+    transform: translate(0, -5px);
+}
+
+.arg-descr .arg:hover span {
+    color: #f87a02;
+}
+
+.arg .number {
+    display: flex;
+    align-items: flex-start;
+    font-size: 72px;
+    font-weight: 600;
+    color: #f87a02;
+    transition: .5s;
+    margin-bottom: -15px;
+}
+
+.arg span {
+    font-weight: 600;
+    color: #636b7c;
+    transition: .5s;
+}
+
+.arg p {
+    color: #868C9A;
+}
+
+.arg-descr a {
+    padding: 10px 20px;
+    margin-top: 50px;
+    display: inline-block;
+    cursor: pointer;
+    background: #f87a02;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: -1px 12px 20px 1px rgba(0,0,0,.3);
+    transition: .5s;
+}
+
+.arg-descr a:hover {
+    background: #866208;
+}
+
+
+
+/*----------SECTION ACHIVEMENT---------*/
+.achivement {
+    padding: 30px 30px;
+    box-shadow: 0px 14px 2px -10px rgba(0,0,0, 0.2);    
+}
+
+.achiv-descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.descr {
+    text-align: center;
+    color: #818796;
+    border: 1px solid #D0D2D8;
+    padding: 30px 50px;
+    margin: 30px 0;
+    transition: .5s;
+}
+
+.descr:hover {
+    box-shadow: 0 300px 3px #818796 inset;   
+    color: #ffffff;
+}
+
+.descr:hover h1 {
+    color: #ffffff;
+}
+
+.line {
+    display: inline-block;
+    margin: auto;
+    width: 300px;
+    height: 1px;
+    background: #f87a02;
+}
+
+.descr h1 {
+    color: #f87a02;
+}
+
+/*--------SECTION PROFIT--------------*/
+.profit {
+    padding: 30px 200px;
+    box-shadow: 0px 14px 2px -10px rgba(0,0,0, 0.2);    
+}
+
+.profit-descr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.profit-descr .descr-cont {
+    width: 45%;
+    text-align: center;
+}
+
+.profit-descr .descr-cont img {
+    transition: .5s;
+}
+
+.profit-descr .descr-cont:hover img {
+    transform: rotate(360deg);
+}
+
+.descr-cont p {
+    color: #818796;
+}
+
+.profit .descr-cont:nth-child(3),
+.profit .descr-cont:nth-child(4) {
+    margin-top: 100px;
+}
+
+/*----------SECTION BELOW--------*/
+.below {
+    padding: 30px 0;
+    box-shadow: 0px 14px 2px -10px rgba(0,0,0, 0.2);    
+    margin-bottom: 20px;
+}
+
+.below .below-contetn {
+    text-align: center;
+}
+
+.below-contetn span {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.below-contetn h1 {
+    margin-bottom: 10px;
+}
+
+.below-contetn p {
+    color: #818796;
+}
+
+.below-contetn img {
+    animation-name: action;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/*--------ANIMATION ARROW------*/
+@keyframes action {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 7px);
+    }
+}
+
+/*----------MEDIA------------*/
+@media only screen and (max-width : 768px) {
+
+    .profit {
+        padding: 30px 100px;    
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .descr-wrapper .product-descr {
+        width: 100%;
+    }
+
+    .arg-descr .arg {
+        width: 100%;
+    }
+
+    .profit-descr .descr-cont {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .profit .descr-cont:nth-child(3),
+    .profit .descr-cont:nth-child(4) {
+        margin-top: 10px;
+    }
+
+    .profit {
+        padding: 30px 20px;    
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+    header
+        h2
+            margin: -7px 0 7px
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+    header
+        h2
+            margin: -7px 0 -3px
+
+	
+//Medium: ≥768px
++media-breakpoint-down(md)
+    .time
+        margin-top: 30px
+    .f-phone
+        margin-top: 30px
+//Small: ≥576px
++media-breakpoint-down(sm)
+    .img-responsive
+        margin: auto
+        
+    header
+        h2
+            margin: 30px 0 0
+
+    .list
+        margin-top: 30px
+        margin-left: 35px
+
+    .video
+        padding: 0
+
+    footer
+        text-align: center
+
+    .size
+        img
+            margin-top: 30px
+        
+    .f-list
+        ul
+            margin-top: 30px
+            li
+                margin-bottom: 15px
+
+//Extra small: >0
++media-breakpoint-down(xs)
+    .booking
+        grid-template-columns: 1fr
+        padding: 0 10px
+        .order
+            padding: 25px
+
+    .size
+        img
+            margin: 30px auto 0
+            width: 100%
+    
+    .f-logo
+        h2
+            font-size: 36px
+    
+    .f-list
+        font-size: 18px
+
+
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)

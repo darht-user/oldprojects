@@ -1,0 +1,190 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+    .a-text {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+    body .about-us,
+    body .our-services,
+    body .they-says,
+    body .clients,
+    body .feedback {
+        padding: 130px 50px;
+    }
+    .a-text {
+        width: 50%;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+    .about-us .a-slider, .a-text {
+        width: 50%;
+    }
+
+    .our-services .services {
+        flex-direction: column;
+    }
+
+    .services-content .services {
+        width     : 550px;
+        height    : 371px;
+        margin-top: 15px;
+    }
+    
+    .our-services .services-content .services {
+        width      : 550px;
+        margin-left: 0;
+    }
+
+    .says-content .quotes .quote {
+        padding: 20px 60px;
+    }
+
+    .says-content .quotes .slick-prev {
+        left: 70%;
+    }
+    .a-text {
+        width: 50%;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+
+    .about-us .a-slider, .a-text {
+        width     : 80%;
+        text-align: center;
+    }   
+
+    .about-us .about-content {
+        justify-content: center;
+        align-items    : center;
+    }
+
+    .about-us .about-content .a-slider {
+        margin-bottom: 100px;
+    }
+
+    .our-services .services-content .services {
+        width      : 100%;
+        margin-left: 0;
+    }
+
+    .they-says .says-content {
+        grid-template-columns: 400px;
+
+    }
+    .about-content {
+        margin-top: 60px;
+    }
+    .a-text h3 {
+        margin-top: 35px;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+    body .about-us,
+    body .our-services,
+    body .they-says,
+    body .clients,
+    body .feedback {
+        padding: 50px 10px !important;
+    }
+
+    body .about-us .a-slider, .a-text {
+        width     : 100%;
+        text-align: center;
+    } 
+
+    /* .they-says .says-content {
+        grid-auto-columns: 1fr !important;
+    } */
+
+    body .they-says .says-content {
+        grid-template-columns: minmax(300px, 400px) !important;
+    }
+
+    .says-content .quotes {
+        margin-bottom: 60px;
+    }
+
+    .says-content .quotes .slick-prev {
+        left: 50%;
+    }
+
+    .feedback .feedback-content {
+        grid-template-columns: 1fr !important;
+    }
+    section {
+        padding   : 130px 10px;
+        box-sizing: border-box;
+    }
+    .services .services-text {
+        padding   : 35px 125px 0 60px;
+        background: rgba(0, 0, 0, .5);
+        height    : 100%;
+        position  : relative;
+    }
+    .services-content .services:nth-child(6) .services-text {
+        padding-right: 60px;
+    }
+    header {
+        background: #eff0f2;
+        padding   : 30px 25px;
+        text-align: center;
+    }
+    .about-content {
+        margin-top: 60px;
+    }
+    .a-text h3 {
+        margin-top: 35px;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
